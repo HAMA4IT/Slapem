@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slap'em</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Added Google Fonts for better typography -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Slap'em</h1>
+    </header>
+    <nav>
+        <button id="tab-home">Home</button>
+        <button id="tab-categories">Categories</button>
+        <button id="tab-objects">Objects</button>
+    </nav>
+    <section id="home-section" style="display: none;">
+        <h2>Home</h2>
+        <div id="home-content"></div>
+    </section>
+    <section id="categories-section">
+        <h2>Categories</h2>
+        <ul id="category-list"></ul>
+        <form id="add-category-form">
+            <input type="text" id="new-category-name" placeholder="New Category Name" required>
+            <button type="submit">Add Category</button>
+        </form>
+    </section>
+    <section id="objects-section" style="display: none;">
+        <h2>Objects</h2>
+        <div id="object-list"></div>
+        <form id="add-object-form">
+            <input type="text" id="new-object-name" placeholder="Object Name" required>
+            <input type="file" id="new-object-file" accept="image/*">
+            <select id="object-category" required></select>
+            <button type="submit">Add Object</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Slap'em</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
